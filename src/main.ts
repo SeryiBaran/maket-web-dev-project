@@ -55,32 +55,32 @@ try {
 
   const worksCardsData = [
     {
-      img: './src/assets/img/works/hand_watch.png',
+      img: './src/assets/img/works/hand_watch.webp',
       title: 'Hand Watch',
       tag: 'ui/ux design',
     },
     {
-      img: './src/assets/img/works/one_day_pass.png',
+      img: './src/assets/img/works/one_day_pass.webp',
       title: 'One Day Pass',
       tag: 'ui/ux design',
     },
     {
-      img: './src/assets/img/works/t_shirts.png',
+      img: './src/assets/img/works/t_shirts.webp',
       title: 'T-Shirts',
       tag: 'ui/ux design',
     },
     {
-      img: './src/assets/img/works/packet_bottle.png',
+      img: './src/assets/img/works/packet_bottle.webp',
       title: 'Packet Bottle',
       tag: 'ui/ux design',
     },
     {
-      img: './src/assets/img/works/bottle.png',
+      img: './src/assets/img/works/bottle.webp',
       title: 'Bottle',
       tag: 'ui/ux design',
     },
     {
-      img: './src/assets/img/works/bag.png',
+      img: './src/assets/img/works/bag.webp',
       title: 'Bag',
       tag: 'ui/ux design',
     },
@@ -150,49 +150,49 @@ try {
 
   const teamCardsData = [
     {
-      photo: './src/assets/img/team/1.png',
+      photo: './src/assets/img/team/1.webp',
       name: 'John Doe',
       post: 'General Manager',
     },
     {
-      photo: './src/assets/img/team/2.png',
+      photo: './src/assets/img/team/2.webp',
       name: 'Alexa Biru',
       post: 'Office Director',
     },
     {
-      photo: './src/assets/img/team/3.png',
+      photo: './src/assets/img/team/3.webp',
       name: 'Ronobir sing',
       post: 'Admin',
     },
 
     {
-      photo: './src/assets/img/team/1.png',
+      photo: './src/assets/img/team/1.webp',
       name: 'John Doe',
       post: 'General Manager',
     },
     {
-      photo: './src/assets/img/team/2.png',
+      photo: './src/assets/img/team/2.webp',
       name: 'Alexa Biru',
       post: 'Office Director',
     },
     {
-      photo: './src/assets/img/team/3.png',
+      photo: './src/assets/img/team/3.webp',
       name: 'Ronobir sing',
       post: 'Admin',
     },
 
     {
-      photo: './src/assets/img/team/1.png',
+      photo: './src/assets/img/team/1.webp',
       name: 'John Doe',
       post: 'General Manager',
     },
     {
-      photo: './src/assets/img/team/2.png',
+      photo: './src/assets/img/team/2.webp',
       name: 'Alexa Biru',
       post: 'Office Director',
     },
     {
-      photo: './src/assets/img/team/3.png',
+      photo: './src/assets/img/team/3.webp',
       name: 'Ronobir sing',
       post: 'Admin',
     },
@@ -269,7 +269,7 @@ try {
 
   const blogPostsData = [
     {
-      img: './src/assets/img/posts/post2.png',
+      img: './src/assets/img/posts/post2.webp',
       title: 'SEO Quis Vestibulum 1',
       tag: 'Development',
       date: '14.07.2017',
@@ -277,7 +277,7 @@ try {
         'Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...',
     },
     {
-      img: './src/assets/img/posts/post2.png',
+      img: './src/assets/img/posts/post2.webp',
       title: 'SEO Quis Vestibulum 2',
       tag: 'Development',
       date: '14.07.2017',
@@ -285,7 +285,7 @@ try {
         'Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...',
     },
     {
-      img: './src/assets/img/posts/post3.png',
+      img: './src/assets/img/posts/post3.webp',
       title: 'SEO Quis Vestibulum 3',
       tag: 'Development',
       date: '14.07.2017',
