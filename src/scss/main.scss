@@ -18,7 +18,7 @@ body {
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
     sans-serif;
   color: #212121;
-  line-height: 2.2em;
+  line-height: 22px;
 }
 
 a {
@@ -132,6 +132,19 @@ textarea {
   &::placeholder {
     color: #686868;
     opacity: 1;
+  }
+}
+
+.card {
+  padding: 1rem;
+  .cardIcon {
+    margin: 4rem;
+  }
+  .cardHeading {
+    margin-bottom: 2.6rem;
+  }
+  .cardButton {
+    margin-top: 4.4rem;
   }
 }
 
@@ -268,24 +281,19 @@ section {
 .about-us {
   .aboutCards {
     margin-top: 8rem;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     gap: 1rem;
-    justify-content: space-around;
-  }
-}
-
-.card {
-  padding: 1rem;
-  max-width: 26rem;
-  .cardIcon {
-    margin: 4rem;
-  }
-  .cardHeading {
-    margin-bottom: 2.6rem;
-  }
-  .cardButton {
-    margin-top: 4.4rem;
+    grid-template-columns: repeat(3, 1fr);
+    @media (max-width: 1100px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 720px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .aboutCard {
+      max-width: 26rem;
+      margin: auto;
+    }
   }
 }
 
@@ -293,13 +301,19 @@ section {
   background-color: $accentBg;
   .servicesCards {
     margin-top: 8rem;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     gap: 3rem;
-    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    @media (max-width: 1100px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 720px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
     .servicesCard {
+      max-width: 100%;
+      width: 100%;
       padding: 5rem;
-      max-width: 35rem;
       background-color: #fff;
       transition-property: background-color, color, box-shadow;
       transition-duration: 300ms;
@@ -329,12 +343,17 @@ section {
   }
   .worksCards {
     margin: 11.2rem 0;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     gap: 3rem;
-    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    @media (max-width: 1100px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 720px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
     .worksCard {
-      max-width: 36rem;
+      margin: 0 auto;
       position: relative;
       .worksCardImage {
         display: block;
@@ -370,12 +389,16 @@ section {
   background-color: #f0f0f0;
   .pricingCards {
     margin-top: 12.6rem;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     gap: 3rem;
-    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    @media (max-width: 1100px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 720px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
     .pricingCard {
-      max-width: 36rem;
       width: 100%;
       background-color: #fff;
       transition-property: box-shadow;
@@ -584,30 +607,37 @@ section.contacts {
   }
   .contactsForm {
     margin-top: 8.5rem;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 3rem;
-    .inputs {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 3rem;
-      input {
-        flex-grow: 1;
-      }
+    grid-template-columns: repeat(2, 1fr);
+    input[name='name'] {
+    }
+    input[name='email'] {
     }
     textarea {
       height: 32.3rem;
+      grid-column: 1 / span 2;
     }
     .contactsFormBtn {
-      align-self: end;
+      justify-self: end;
+      grid-column: 2;
       background: #fff;
       padding: 2.2rem;
       font-size: 2rem;
       font-weight: 600;
-      width: 22rem;
+      min-width: 22rem;
       border-radius: 1rem;
       cursor: pointer;
+    }
+    @media (max-width: 720px) {
+      grid-template-columns: repeat(1, 1fr);
+      .contactsFormBtn {
+        grid-column: 1;
+        width: 100%;
+      }
+      textarea {
+        grid-column: 1;
+      }
     }
   }
 }
