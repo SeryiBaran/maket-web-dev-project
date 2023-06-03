@@ -44,7 +44,7 @@ jobs:
 
         # Here magic comes
       - name: Build project
-        run: npm run prod
+        run: npm run build
 
       - name: Upload builded project
         uses: actions/upload-pages-artifact@v1
