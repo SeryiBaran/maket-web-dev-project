@@ -1,0 +1,24 @@
+{
+  "name": "maket-web-dev-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/aos": "^3.0.4",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2"
+  },
+  "dependencies": {
+    "@animxyz/core": "^0.6.6",
+    "@fontsource/open-sans": "^5.0.2",
+    "aos": "^2.3.4",
+    "gardevoir": "^1.0.0",
+    "keen-slider": "^6.8.5",
+    "sass": "^1.62.1"
+  }
+}

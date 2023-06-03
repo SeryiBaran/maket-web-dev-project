@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- TODO: сделать адаптив -->
+      <header>
+        <div class="container">
+          <a class="logo" href="/">Your Logo</a>
+          <nav class="nav">
+            <a href="#!">Home</a>
+            <a href="#!">About</a>
+            <a href="#!">Servicing</a>
+            <a href="#!">Portfolio</a>
+            <a href="#!">Blog</a>
+            <a href="#!">Contact us</a>
+            <a href="#!" class="searchButton">
+              <!-- prettier-ignore -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208zM208 352a144 144 0 1 0 0-288a144 144 0 1 0 0 288z"/></svg>
+            </a>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section class="promo">
+          <div class="container">
+            <h1 class="promoHeading">Web development project</h1>
+            <p class="promoDescription">
+              Very suitable to support all web development projects
+            </p>
+            <div class="promoButtons" xyz="fade down-5 stagger-2">
+              <a href="#!" class="xyz-in btn btn-lg btn-outline"
+                >OUR SERVICES</a
+              >
+              <a href="#!" class="xyz-in btn btn-lg">HIRE IS NOW</a>
+            </div>
+          </div>
+          <a
+            href="#about-us"
+            class="promoToBottomLink xyz-in"
+            xyz="down direction-alternate iterate-infinite"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7L86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+              />
+            </svg>
+          </a>
+        </section>
+        <section class="about-us" id="about-us">
+          <div class="container" data-aos="fade-up">
+            <h2 class="sectionHeading">About Us</h2>
+            <p class="sectionDescription">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor <br />
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam,
+            </p>
+            <div class="aboutCards">
+              <div class="card aboutCard">
+                <img src="./src/assets/img/globe.png" class="cardIcon" />
+                <p class="cardHeading h3">Awesome Icons</p>
+                <p class="cardDescription">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor
+                </p>
+              </div>
+              <div class="card aboutCard">
+                <img
+                  src="./src/assets/img/peoples_transfer.png"
+                  class="cardIcon"
+                />
+                <p class="cardHeading h3">One Page</p>
+                <p class="cardDescription">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor
+                </p>
+              </div>
+              <div class="card aboutCard">
+                <img src="./src/assets/img/head_gear.png" class="cardIcon" />
+                <p class="cardHeading h3">Fully Responsive</p>
+                <p class="cardDescription">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="services">
+          <div class="container" data-aos="fade-up">
+            <h2 class="sectionHeading">Our Services</h2>
+            <p class="sectionDescription">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor <br />
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam,
+            </p>
+            <div class="servicesCards"></div>
+          </div>
+        </section>
+        <section class="works">
+          <div class="container" data-aos="fade-up">
+            <h2 class="sectionHeading">Latest Works</h2>
+            <p class="sectionDescription">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor <br />
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam,
+            </p>
+            <div class="worksFilters">
+              <button class="btn">ALL</button>
+              <button class="btn btn-outline-hover">WEB DESIGN</button>
+              <button class="btn btn-outline-hover">UI/UX DESIGN</button>
+              <button class="btn btn-outline-hover">MOCKUPS</button>
+            </div>
+            <div class="worksCards"></div>
+            <a href="#!" class="btn btn-xl">VIEW ALL</a>
+          </div>
+        </section>
+        <section class="pricing">
+          <div class="container" data-aos="fade-up">
+            <h2 class="sectionHeading">Pricing Plan</h2>
+            <p class="sectionDescription">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor <br />
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam,
+            </p>
+            <div class="pricingCards"></div>
+          </div>
+        </section>
+        <section class="team">
+          <div class="container" data-aos="fade-up">
+            <h2 class="sectionHeading">Our Team Member</h2>
+            <p class="sectionDescription">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor <br />
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam,
+            </p>
+            <div id="teamSlider" class="keen-slider"></div>
+          </div>
+        </section>
+        <section class="blog">
+          <div class="container" data-aos="fade-up">
+            <h2 class="sectionHeading">Blog</h2>
+            <p class="sectionDescription">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor <br />
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam,
+            </p>
+            <div class="blogPostsContainer"></div>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="container" data-aos="fade-up">
+            <h2 class="sectionHeading">Contact Us</h2>
+            <p class="sectionDescription">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor <br />
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam,
+            </p>
+            <div class="contactsContainer">
+              <div class="contact">
+                <div class="contactIcon">
+                  <!-- prettier-ignore -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 24 24"><path fill="currentColor" d="M11.5 7A2.5 2.5 0 0 1 14 9.5a2.5 2.5 0 0 1-2.5 2.5A2.5 2.5 0 0 1 9 9.5A2.5 2.5 0 0 1 11.5 7m0 1A1.5 1.5 0 0 0 10 9.5a1.5 1.5 0 0 0 1.5 1.5A1.5 1.5 0 0 0 13 9.5A1.5 1.5 0 0 0 11.5 8m-4.7 4.36l4.7 7.73l4.7-7.73c.51-.86.8-1.81.8-2.86A5.5 5.5 0 0 0 11.5 4A5.5 5.5 0 0 0 6 9.5c0 1.05.29 2 .8 2.86m10.25.52L11.5 22l-5.55-9.12C5.35 11.89 5 10.74 5 9.5A6.5 6.5 0 0 1 11.5 3A6.5 6.5 0 0 1 18 9.5c0 1.24-.35 2.39-.95 3.38Z"/></svg>
+                </div>
+                <div class="contactText">Nobinagar savar, Dhaka Bangladesh</div>
+              </div>
+              <div class="contact">
+                <div class="contactIcon">
+                  <!-- prettier-ignore -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 24 24"><path fill="currentColor" d="M19.5 22a1.5 1.5 0 0 0 1.5-1.5V17a1.5 1.5 0 0 0-1.5-1.5c-1.17 0-2.32-.18-3.42-.55a1.51 1.51 0 0 0-1.52.37l-1.44 1.44a14.772 14.772 0 0 1-5.89-5.89l1.43-1.43c.41-.39.56-.97.38-1.53c-.36-1.09-.54-2.24-.54-3.41A1.5 1.5 0 0 0 7 3H3.5A1.5 1.5 0 0 0 2 4.5C2 14.15 9.85 22 19.5 22M3.5 4H7a.5.5 0 0 1 .5.5c0 1.28.2 2.53.59 3.72c.05.14.04.34-.12.5L6 10.68c1.65 3.23 4.07 5.65 7.31 7.32l1.95-1.97c.14-.14.33-.18.51-.13c1.2.4 2.45.6 3.73.6a.5.5 0 0 1 .5.5v3.5a.5.5 0 0 1-.5.5C10.4 21 3 13.6 3 4.5a.5.5 0 0 1 .5-.5Z"/></svg>
+                </div>
+                <div class="contactText">
+                  +8801743331996<br />
+                  +8801928737807
+                </div>
+              </div>
+              <div class="contact">
+                <div class="contactIcon">
+                  <!-- prettier-ignore -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 23 24"><path fill="currentColor" d="M5 5h13a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3m0 1c-.5 0-.94.17-1.28.47l7.78 5.03l7.78-5.03C18.94 6.17 18.5 6 18 6H5m6.5 6.71L3.13 7.28C3.05 7.5 3 7.75 3 8v9a2 2 0 0 0 2 2h13a2 2 0 0 0 2-2V8c0-.25-.05-.5-.13-.72l-8.37 5.43Z"/></svg>
+                </div>
+                <div class="contactText">
+                  quickmasud@gmail.com<br />
+                  quickmasud@yahoo.com
+                </div>
+              </div>
+            </div>
+            <form class="contactsForm">
+              <div class="inputs">
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Your NAME"
+                  name="name"
+                />
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Your Email"
+                  name="email"
+                />
+              </div>
+              <textarea
+                class="input"
+                type="text"
+                placeholder="Write Massage"
+                name="message"
+              ></textarea>
+              <button class="contactsFormBtn" type="submit">SEND</button>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="container"><p>All rights Reserved © 2017</p></div>
+      </footer>
+    </div>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
