@@ -165,6 +165,40 @@ function assert(condition: any, msg?: string): asserts condition {
         name: 'Ronobir sing',
         post: 'Admin',
       },
+
+      
+      {
+        photo: (await import('./assets/img/team/1.webp')).default,
+        name: 'John Doe',
+        post: 'General Manager',
+      },
+      {
+        photo: (await import('./assets/img/team/2.webp')).default,
+        name: 'Alexa Biru',
+        post: 'Office Director',
+      },
+      {
+        photo: (await import('./assets/img/team/3.webp')).default,
+        name: 'Ronobir sing',
+        post: 'Admin',
+      },
+
+      
+      {
+        photo: (await import('./assets/img/team/1.webp')).default,
+        name: 'John Doe',
+        post: 'General Manager',
+      },
+      {
+        photo: (await import('./assets/img/team/2.webp')).default,
+        name: 'Alexa Biru',
+        post: 'Office Director',
+      },
+      {
+        photo: (await import('./assets/img/team/3.webp')).default,
+        name: 'Ronobir sing',
+        post: 'Admin',
+      },
     ];
 
     assert(teamCardsContainer !== null, '#teamSlider is null!');
